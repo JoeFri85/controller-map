@@ -1,0 +1,41 @@
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+	
+	<img id="main-img" src="Motion_Map.png" alt="Motion 4000" usemap="#motion_map">
+	
+	<map name="motion_map">
+		<!--   shape of area  / coordinates of area  /  calls cursor change function                        /  default cursor        /  image link             /  area ID -->      
+		<area shape="rect" coords="188,139,317,174"  onmouseover="mouseOver(document.getElementById('chp'))"  onmouseout="mouseOff()" alt="boards/HC-CHP.jpg"    id="chp">
+		<area shape="rect" coords="188,181,317,216"  onmouseover="mouseOver(document.getElementById('mpu'))"  onmouseout="mouseOff()" alt="boards/HC-MPU.jpg"    id="mpu">
+		<area shape="rect" coords="188,222,317,257"  onmouseover="mouseOver(document.getElementById('uio'))"  onmouseout="mouseOff()" alt="boards/HC-UIO.jpg"    id="uio">
+		<area shape="rect" coords="188,266,317,356"  onmouseover="mouseOver(document.getElementById('ctl'))"  onmouseout="mouseOff()" alt="boards/HC-CTL.jpg"    id="ctl">
+		<area shape="rect" coords="188,365,317,441"  onmouseover="mouseOver(document.getElementById('mpi'))"  onmouseout="mouseOff()" alt="boards/TC-MPI.jpg"    id="mpi">
+		<area shape="rect" coords="188,451,317,527"  onmouseover="mouseOver(document.getElementById('rdr'))"  onmouseout="mouseOff()" alt="boards/HC-RDR.jpg"    id="rdr">
+		<area shape="rect" coords="199,622,327,657"  onmouseover="mouseOver(document.getElementById('chp2'))" onmouseout="mouseOff()" alt="boards/HC-CHP.jpg"    id="chp2">
+		<area shape="rect" coords="199,664,327,699"  onmouseover="mouseOver(document.getElementById('mpu2'))" onmouseout="mouseOff()" alt="boards/HC-MPU.jpg"    id="mpu2">
+		<area shape="rect" coords="552,296,659,331"  onmouseover="mouseOver(document.getElementById('lsi'))"  onmouseout="mouseOff()" alt="boards/MC-LSI.jpg"    id="lsi">
+		<area shape="rect" coords="552,400,680,435"  onmouseover="mouseOver(document.getElementById('uio2'))" onmouseout="mouseOff()" alt="boards/HC-UIO.jpg"    id="uio2">
+		<area shape="rect" coords="530,511,616,546"  onmouseover="mouseOver(document.getElementById('cop2'))" onmouseout="mouseOff()" alt="boards/ICE-COP-2.jpg" id="cop2">
+		<area shape="rect" coords="530,614,616,649"  onmouseover="mouseOver(document.getElementById('cpi'))"  onmouseout="mouseOff()" alt="boards/MC-CPI.jpg"    id="cpi">
+		<area shape="rect" coords="530,716,616,751"  onmouseover="mouseOver(document.getElementById('cpi2'))" onmouseout="mouseOff()" alt="boards/MC-CPI-2.jpg"  id="cpi2">
+		<area shape="rect" coords="467,802,552,837"  onmouseover="mouseOver(document.getElementById('hn'))"   onmouseout="mouseOff()" alt="boards/SC-3HN.jpg"    id="hn">
+		<area shape="rect" coords="498,876,584,910"  onmouseover="mouseOver(document.getElementById('hn2'))"  onmouseout="mouseOff()" alt="boards/SC-3HN.jpg"    id="hn2">
+		<area shape="rect" coords="859,23,913,320"   onmouseover="mouseOver(document.getElementById('elgo'))" onmouseout="mouseOff()" alt="boards/ELGO.jpg"      id="elgo">
+		<area shape="rect" coords="1083,69,1165,262" onmouseover="mouseOver(document.getElementById('edge'))" onmouseout="mouseOff()" alt="boards/LS-EDGE.jpg"   id="edge">
+		<area shape="rect" coords="16,619,145,655"   onmouseover="mouseOver(document.getElementById('dvr'))" onmouseout="mouseOff()" alt="boards/HC-DVR.jpg"   id="dvr">
+	</map>
+
+<!-- Pop-up image -->
+<div id="popUpBuild" class="popUp">
+  <span class="close">×</span>
+  <img class="popUp-content" id="img01">
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
